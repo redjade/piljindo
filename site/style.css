@@ -262,7 +262,15 @@ a:hover { color: var(--ink); }
 .reading-help p + p { margin-top: .7rem; }
 .reading-help img { max-height: 13rem; width: auto; border: 1px solid var(--rule); }
 .stroke-reading .reading-help { margin-top: .45rem; }
-.stroke-reading-lead { margin-bottom: .8rem; }
+.stroke-editor-note {
+  margin-bottom: 1.35rem;
+  padding: .65rem .9rem;
+  border-left: 2px solid var(--red);
+  background: var(--soft);
+  color: var(--muted);
+  font-size: .96rem;
+}
+.stroke-reading-label { font-size: .94rem; font-weight: 700; }
 .original blockquote, .chinese-strokes { font-size: 1.17rem; line-height: 1.9; }
 .original-link { display: inline-block; margin-top: .5rem; font-size: .95rem; }
 .original-page .page-title h1 { letter-spacing: .035em; }
@@ -322,6 +330,7 @@ a:hover { color: var(--ink); }
   color: var(--muted);
   font: .96rem / 1.75 var(--sans);
 }
+.stroke-scene .scene-label { margin-bottom: .15rem; }
 .stroke-mark { font-size: 1.65rem; text-align: center; }
 
 .lesson-list { padding: 0; margin: .5rem 0 3rem; list-style: none; border-top: 1px solid var(--rule); }

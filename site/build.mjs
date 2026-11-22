@@ -196,15 +196,23 @@ function renderStrokeReading() {
     const scene = notes.get('W06-' + stroke.slug);
     if (!scene) throw new Error('오늘의 장면이 빠진 획 ' + stroke.slug);
     return `<li><span class="stroke-mark" lang="zh-Hant">${escape(meaning.glyph)}</span><div>
-      <strong class="stroke-reading-name">${stroke.name}</strong><p>${inline(meaning.korean, wei)}</p>
-      <div class="stroke-scene">${render(scene, reflections)}</div>
+      <strong class="stroke-reading-name">${stroke.name}</strong><p class="translation">${inline(meaning.korean, wei)}</p>
+      <aside class="stroke-scene" aria-label="편집자 주 · 오늘의 장면">
+        <p class="scene-label" aria-hidden="true">오늘의 장면</p>
+        ${render(scene, reflections)}</aside>
       ${helpFor('W06-' + stroke.slug)}
       </div></li>`;
   }).join('');
   const originals = meanings.map(({ glyph, chinese }) => glyph + '　' + chinese);
   const chinese = `<ul class="chinese-strokes" lang="zh-Hant">${originals.map((original) => `<li>${escape(original)}</li>`).join('')}</ul>`;
-  const lead = '일곱 비유 아래에 오늘 떠올릴 수 있는 장면을 붙였다. 그중 하나를 골라 눈과 마음에 남은 방향이나 무게를 느껴 본다.';
-  return { text: `<p class="stroke-reading-lead">${lead}</p><ul class="stroke-reading">${korean}</ul><p><a href="practice.html">일곱 획 써 보기</a></p>`, chinese, originals, commentary: render(beforeTable + '\n' + noteText, wei) };
+  const text = `<aside class="stroke-editor-note" aria-label="편집자 주">
+    <p class="scene-label" aria-hidden="true">편집자 주</p>
+    <p>각 획 아래의 ‘오늘의 장면’은 이 사이트에서 덧붙인 연습 안내입니다. 한 장면을 골라 눈과 마음에 남는 방향이나 무게를 느껴 봅니다.</p>
+    </aside>
+    <p class="stroke-reading-label" id="stroke-reading-label">《필진도》 번역</p>
+    <ul class="stroke-reading" aria-labelledby="stroke-reading-label">${korean}</ul>
+    <p><a href="practice.html">일곱 획 써 보기</a></p>`;
+  return { text, chinese, originals, commentary: render(beforeTable + '\n' + noteText, wei) };
 }
 
 function renderSplitReading(body, source) {
@@ -270,18 +278,19 @@ function renderTreatise(source, treatise) {
     : '글자의 자리를 마음속에 먼저 본다. 뜻을 따라 손이 움직이고, 떨어진 획 사이에도 흐름이 이어진다.';
   const chapters = treatise.parts.map(({ title, body }) => {
     const [id, heading] = title.split(' · ');
+    const isStrokeReading = id === 'W06';
     const reflection = notes.get(id);
     if (!reflection) throw new Error('읽기 실습이 빠진 단락 ' + id);
-    const { text, chinese, originals, commentary } = id === 'W06' ? renderStrokeReading() : renderSplitReading(body, source);
+    const { text, chinese, originals, commentary } = isStrokeReading ? renderStrokeReading() : renderSplitReading(body, source);
     const originalBody = annotatedOriginal(id, originals, chinese);
     return {
       id, heading, originalHtml: `<section class="original-chapter" id="${id}"><h2 class="visually-hidden">${escape(heading)}</h2>${originalBody}</section>`,
       html: `<section class="chapter" id="${id}">
         <h2 id="${fragment(title)}">${escape(heading)}</h2>
-        <div class="translation">${text}</div>
-        ${isWei && id !== 'W06' ? helpFor(id) : ''}
-        <aside class="writing-pause" aria-label="${id === 'W06' ? '써 보기' : '오늘의 장면과 써 보기'}">
-          ${id === 'W06' ? '' : '<p class="scene-label" aria-hidden="true">오늘의 장면</p>'}
+        ${isStrokeReading ? text : `<div class="translation">${text}</div>`}
+        ${isWei && !isStrokeReading ? helpFor(id) : ''}
+        <aside class="writing-pause" aria-label="${isStrokeReading ? '써 보기' : '오늘의 장면과 써 보기'}">
+          ${isStrokeReading ? '' : '<p class="scene-label" aria-hidden="true">오늘의 장면</p>'}
           ${render(reflection, reflections)}</aside>
         <div class="text-details">${disclosure('이 단락의 원문', chinese + `<a class="original-link" href="${originalHref}#${id}">한문 원문에서 읽기</a>`, 'original')}
         ${commentary ? disclosure('번역 주석과 출전', commentary) : ''}</div>
