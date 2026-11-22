@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 624 336" role="img" aria-labelledby="title desc">
+  <title id="title">늘어선 구름과 가로획</title>
+  <desc id="desc">먹선은 오른쪽으로 길게 펼쳐지고 가운데가 조용히 가늘어진다.</desc>
+  <rect width="624" height="336" rx="8" fill="#f7f3eb"/>
+  <path d="M105 185 C114 170 139 167 180 162 C259 152 331 157 389 151 C437 146 477 137 502 139 C514 140 521 147 520 156 C518 166 496 171 466 171 C378 171 319 177 259 180 C210 183 170 191 129 197 C117 199 107 196 105 185Z" fill="#24231f"/>
+  <path d="M93 164 C179 149 273 152 354 148 C408 145 473 136 523 129" fill="none" stroke="#a04d40" stroke-width="1.7" stroke-linecap="round"
+        stroke-dasharray="4,5"/>
+  <path d="M515.6 134.1 L523 129 L514.5 126.1" fill="none" stroke="#a04d40" stroke-width="1.7"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="93" cy="164" r="4" fill="#f7f3eb" stroke="#a04d40" stroke-width="1.6"/>
+</svg>

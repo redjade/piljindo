@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 624 336" role="img" aria-labelledby="title desc">
+  <title id="title">막힘을 가르는 왼삐침</title>
+  <desc id="desc">오른쪽 위에서 두껍게 시작해 왼쪽 아래로 가볍게 뻗는다.</desc>
+  <rect width="624" height="336" rx="8" fill="#f7f3eb"/>
+  <path d="M383 75 C398 82 411 91 408 103 C398 137 356 176 327 195 C295 217 246 235 194 253 C225 230 269 195 299 169 C335 139 371 98 383 75Z" fill="#24231f"/>
+  <path d="M405 66 C400 92 382 121 354 151 C319 186 279 213 227 237" fill="none" stroke="#a04d40" stroke-width="1.7" stroke-linecap="round"
+        stroke-dasharray="4,5"/>
+  <path d="M232.6 230.0 L227 237 L235.9 237.3" fill="none" stroke="#a04d40" stroke-width="1.7"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="405" cy="66" r="4" fill="#f7f3eb" stroke="#a04d40" stroke-width="1.6"/>
+</svg>

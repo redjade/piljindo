@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 624 336" role="img" aria-labelledby="title desc">
+  <title id="title">파도가 풀리는 오른쪽 파획</title>
+  <desc id="desc">왼쪽 위에서 출발한 선이 오른쪽 아래로 내려가며 넓어졌다가 가늘게 풀린다.</desc>
+  <rect width="624" height="336" rx="8" fill="#f7f3eb"/>
+  <path d="M169 97 C204 107 231 132 270 155 C307 177 352 195 387 198 C436 204 472 194 521 184 C487 205 435 229 389 235 C341 241 300 218 262 192 C230 170 203 127 169 97Z" fill="#24231f"/>
+  <path d="M157 80 C197 86 232 125 272 149 C313 177 362 206 408 210 C450 213 482 201 526 183" fill="none" stroke="#a04d40" stroke-width="1.7" stroke-linecap="round"
+        stroke-dasharray="4,5"/>
+  <path d="M520.1 189.7 L526 183 L517.1 182.3" fill="none" stroke="#a04d40" stroke-width="1.7"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="157" cy="80" r="4" fill="#f7f3eb" stroke="#a04d40" stroke-width="1.6"/>
+</svg>

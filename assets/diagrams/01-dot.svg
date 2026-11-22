@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 624 336" role="img" aria-labelledby="title desc">
+  <title id="title">떨어지는 돌과 점</title>
+  <desc id="desc">붉은 점선이 오른쪽 아래로 다가오고 짧고 묵직한 먹점이 내려앉는다.</desc>
+  <rect width="624" height="336" rx="8" fill="#f7f3eb"/>
+  <path d="M283 126 C305 134 330 156 339 183 C343 194 341 205 334 209 C320 219 311 208 302 197 C290 181 282 154 283 126Z" fill="#24231f"/>
+  <path d="M241 81 Q271 102 290 133 Q310 156 319 174" fill="none" stroke="#a04d40" stroke-width="1.7" stroke-linecap="round"
+        stroke-dasharray="4,5"/>
+  <path d="M311.8 168.6 L319 174 L319.0 165.1" fill="none" stroke="#a04d40" stroke-width="1.7"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="241" cy="81" r="4" fill="#f7f3eb" stroke="#a04d40" stroke-width="1.6"/>
+</svg>

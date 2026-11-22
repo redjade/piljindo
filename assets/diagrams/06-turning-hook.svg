@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 624 336" role="img" aria-labelledby="title desc">
+  <title id="title">마디가 있는 가로꺾은갈고리</title>
+  <desc id="desc">가로로 나아가다가 방향을 꺾어 아래로 내린 뒤 왼쪽 위에 짧은 갈고리를 남긴다.</desc>
+  <rect width="624" height="336" rx="8" fill="#f7f3eb"/>
+  <path d="M161 115 C197 101 264 101 314 93 C347 88 372 80 389 82 C410 84 422 97 413 119 C401 150 399 193 375 229 C366 243 348 255 332 250 C322 246 321 235 314 217 C327 222 340 223 345 217 C366 188 375 139 377 114 C306 115 235 130 173 130 C166 130 162 125 161 115Z" fill="#24231f"/>
+  <path d="M146 108 C204 95 292 96 363 83 Q403 73 407 98 C402 142 386 205 359 231 Q342 247 329 226" fill="none" stroke="#a04d40" stroke-width="1.7" stroke-linecap="round"
+        stroke-dasharray="4,5"/>
+  <path d="M336.6 230.7 L329 226 L329.8 234.9" fill="none" stroke="#a04d40" stroke-width="1.7"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="146" cy="108" r="4" fill="#f7f3eb" stroke="#a04d40" stroke-width="1.6"/>
+</svg>

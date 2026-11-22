@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 624 336" role="img" aria-labelledby="title desc">
+  <title id="title">풀려 오르는 비낀 갈고리</title>
+  <desc id="desc">비스듬히 낮아진 먹선이 아래에서 모였다가 오른쪽 위로 가볍게 끝난다.</desc>
+  <rect width="624" height="336" rx="8" fill="#f7f3eb"/>
+  <path d="M233 72 C242 64 260 67 267 74 C273 99 289 138 309 169 C332 204 356 218 379 218 C394 218 402 192 417 170 C416 208 407 247 382 251 C351 254 318 230 286 188 C262 156 237 106 233 72Z" fill="#24231f"/>
+  <path d="M249 54 C263 111 289 168 327 207 C353 236 385 251 415 178" fill="none" stroke="#a04d40" stroke-width="1.7" stroke-linecap="round"
+        stroke-dasharray="4,5"/>
+  <path d="M415.7 186.9 L415 178 L408.3 183.9" fill="none" stroke="#a04d40" stroke-width="1.7"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="249" cy="54" r="4" fill="#f7f3eb" stroke="#a04d40" stroke-width="1.6"/>
+</svg>
